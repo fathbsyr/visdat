@@ -1,5 +1,5 @@
 import streamlit as st
-import datetime
+import datetime 
 
 st.header("Praktikum 5 Forms")
 st.subheader("Bagian 5: membuat banyak tipe form")
@@ -38,6 +38,7 @@ st.time_input("Masukkan waktu lokal anda")
 
 # membuat form input tanggal
 st.header("Buat Form Input Tanggal")
-st.date_input("Masukkan tanggal lokal anda", value=datetime.data(2004, 06, 08)),
-MinimumValue = datetime.data(2004, 06, 08),
-MaximumValue = datetime.data(2025, 02, 11),
+st.date_input("Pilih Tanggal Mu", value=datetime.date(2025, 11, 2),
+min_value=datetime.date(2025, 11, 2),
+max_value=datetime.date(2100, 1, 1))
+
