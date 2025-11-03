@@ -1,5 +1,6 @@
 import streamlit as st
 import datetime 
+import pandas as pd 
 
 st.header("Praktikum 5 Forms")
 st.subheader("Bagian 5: membuat banyak tipe form")
@@ -42,3 +43,28 @@ st.date_input("Pilih Tanggal Mu", value=datetime.date(2025, 11, 2),
 min_value=datetime.date(2025, 11, 2),
 max_value=datetime.date(2100, 1, 1))
 
+# membuat form input warna
+st.header("Buat Form Input Warna")
+warna = st.color_picker("Pilih Warna")
+st.write("Warna Anda Adalah: ",warna)
+
+# membuat form up dataset
+st.header("Buat Form Upload Dataset")
+file = st.file_uploader("Upload Dataset",type=["csv"])
+detail = st.button("Detail Dataset")
+if detail :
+    if file is not None:
+        detail_data_file = {"nama file":file.name, "tipe file":file.type, "ukuran file":file.size}
+        st.write("Detail File:")
+        st.write(detail_data_file)
+        st.write("Preview Dataset:")
+        df = pd.read_csv(file)
+        st.dataframe(df)
+    else:
+        st.write("Tidak ada file yang diupload") 
+
+# membuat tombol kirim untuk form
+form = st.form(key="my-form")
+a = form.text_input(label='Masukkan Nama Anda')
+button = form.form_submit_button(label='Kirim')
+st.write("Nama Anda Adalah: ",a)
