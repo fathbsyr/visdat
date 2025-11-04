@@ -60,12 +60,12 @@ mime = "image/jpg"
 st.header("Progress Lu Sekarang")
 progres = st.progress(0)
 for i in range(100):
-    time.sleep(0.5)
+    time.sleep(0.2)
     progres.progress(i+1)
 st.write("Selesai")
 
 # membuat tampilan spinner
 st.header("Spinner Lu Sekarang")
 with st.spinner("Loading...."):
-    time.sleep(0.1)
+    time.sleep(10)
 st.write("Selesai")

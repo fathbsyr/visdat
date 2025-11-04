@@ -35,13 +35,11 @@ st.latex(r''' (a+b)^2 = a^2 + b^2 + 2ab ''') #rumus kuadrat binominal
 #bagian 3 menampilkan kode program
 st.header("Displaying Code")
 st.subheader("Python code")
-
 #simpan ke variable
 code = '''
 def hello():
     print("hello streamlit!")
 '''
-
 #st.code untuk menampilkan potongan kode dengan format rapi
 st.code(code, language='python')
 
