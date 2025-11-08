@@ -1,7 +1,7 @@
 import streamlit as st
 import time 
 
-st.header("Praktikum 4 Button & Sliders")
+st.header("Praktikum 1 Button & Sliders")
 st.subheader("Bagian 4: Button & Sliders")
 st.markdown("""
 Kelompok 14:

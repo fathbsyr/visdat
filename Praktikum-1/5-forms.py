@@ -2,7 +2,7 @@ import streamlit as st
 import datetime 
 import pandas as pd 
 
-st.header("Praktikum 5 Forms")
+st.header("Praktikum 1 Forms")
 st.subheader("Bagian 5: membuat banyak tipe form")
 st.markdown("""
 Kelompok 14:
