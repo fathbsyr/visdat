@@ -1,8 +1,8 @@
 import streamlit as st 
 
-st.title("SIDEBAR")
+st.title("MULTIPAGE APP")
 st.header("Praktikum 2 Visualisasi Data")
-st.subheader("Bagian 2: Navigasi Kolom")
+st.subheader("Bagian 3: Multipage App")
 st.markdown("""
 Kelompok 14:
 1. Fatih Mubasyir (0110222186)
@@ -10,8 +10,4 @@ Kelompok 14:
 3. Dean Pramona (0110222163)
 """)
 
-
-# Sidebar
-st.sidebar.title("Sidebar")
-st.sidebar.radio("Are you a New User", ["Yes", "No"])
-st.sidebar.slider("Select a Number", 0,10)
+st.header("INI MAIN PAGE")

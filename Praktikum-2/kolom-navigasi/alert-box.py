@@ -1,7 +1,6 @@
 import streamlit as st
-import time
 
-st.title("EMPTY CONTAINER")
+st.title("ALERT BOX")
 st.header("Praktikum 2 Visualisasi Data")
 st.subheader("Bagian 2: Navigasi Kolom")
 st.markdown("""
@@ -11,9 +10,8 @@ Kelompok 14:
 3. Dean Pramona (0110222163)
 """)
 
-# Empty Container
-with st.empty():
-    for seconds in range(5):
-        st.write(f"⏳ {seconds} seconds have passed")
-        time.sleep(1)
-    st.write("✔️ Times up!")
+st.success("Successful")
+st.warning("Warning")
+st.info("Info")
+st.error("Error")
+st.exception("Exception")
