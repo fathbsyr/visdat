@@ -28,7 +28,7 @@ menu_pilihan = st.sidebar.selectbox(
 )
 
 # Fungsi 1: Grafik Tunggal
-def grafik_simple():
+def single_plot():
     figur, area = plt.subplots()
     area.plot(list_bulan, data_jual_a, label="Produk A")
     area.set_title('Grafik Penjualan Produk A (Bulanan)')
@@ -38,7 +38,7 @@ def grafik_simple():
     st.pyplot(figur)
 
 # Fungsi 2: Grafik Ganda
-def grafik_komparasi():
+def multi_plot():
     figur, area = plt.subplots()
     area.plot(list_bulan, data_jual_a, label="Produk A", marker="o", linestyle="--")
     area.plot(list_bulan, data_jual_b, label="Produk B", marker="x", linestyle="-")
@@ -51,7 +51,7 @@ def grafik_komparasi():
     st.pyplot(figur)
 
 # Fungsi 3: Tren Garis
-def grafik_tren():
+def tren():
     figur, area = plt.subplots()
     area.plot(list_bulan, data_jual_c, label="Produk C", color='green', linestyle="dashdot")
     area.plot(list_bulan, data_jual_d, label="Produk D", color='purple', linestyle=":")
@@ -63,7 +63,7 @@ def grafik_tren():
     st.pyplot(figur)
 
 # Fungsi 4: Subplots
-def grafik_bertumpuk():
+def sub_plot():
     figur, area = plt.subplots(2, 1, figsize=(10, 8), sharex=True)
     
     # Plot Atas
@@ -86,10 +86,10 @@ def grafik_bertumpuk():
 
 # Logika Menu
 if menu_pilihan == "Grafik Garis Tunggal":
-    grafik_simple()
+    single_plot()
 elif menu_pilihan == "Grafik Ganda & Kustomisasi":
-    grafik_komparasi()
+    multi_plot()
 elif menu_pilihan == "Analisa Tren Garis":
-    grafik_tren()
+    tren()
 elif menu_pilihan == "Subplot Terpisah":
-    grafik_bertumpuk()
+    sub_plot()
