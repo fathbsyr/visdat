@@ -40,8 +40,8 @@ def single_plot():
 # Fungsi 2: Grafik Ganda
 def multi_plot():
     figur, area = plt.subplots()
-    area.plot(list_bulan, data_jual_a, label="Produk A", marker="o", linestyle="--")
-    area.plot(list_bulan, data_jual_b, label="Produk B", marker="x", linestyle="-")
+    area.plot(list_bulan, data_jual_a, label="Produk A", linestyle="--", marker="o", color="#00A19C")
+    area.plot(list_bulan, data_jual_b, label="Produk B", linestyle="-", marker="x", color="#757171")
 
     area.set_title('Perbandingan Penjualan Produk')
     area.set_xlabel('Periode Bulan')
