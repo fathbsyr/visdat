@@ -11,10 +11,6 @@ Kelompok 14:
 3. Dean Pramona (0110222163)
 """)
 
-import streamlit as st 
-import matplotlib.pyplot as plt 
-import pandas as pd
-
 st.title("Bar Chart")
 st.header("Praktikum 4 Bar Chart")
 st.markdown("""
