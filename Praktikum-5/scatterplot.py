@@ -2,8 +2,8 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import pandas as pd
 
-st.title("Bar Chart")
-st.header("Praktikum 4 Bar Chart")
+st.title("Scatter Plot")
+st.header("Praktikum 5 Scatter Plot")
 st.markdown("""
 Kelompok 14:
 1. Fatih Mubasyir (0110222186)
